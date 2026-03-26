@@ -1,0 +1,15 @@
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+p, ul, ol {
+    margin: 60px 0;
+}
+
+img{
+    max-width: 100%;
+}
+figcaption {
+    text-align: center;
+}
