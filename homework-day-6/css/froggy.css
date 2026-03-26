@@ -1,0 +1,16 @@
+.box-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.img-froggy {
+    width: auto;
+    height: 300px;
+    border: 2px solid #28282b;
+}
+.img-item {
+    text-align: center;
+}
