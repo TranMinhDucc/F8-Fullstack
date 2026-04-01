@@ -1,0 +1,433 @@
+:root {
+    --heading-font: "PT Sans", sans-serif;
+    --black: #000;
+    --white: #fff;
+    --primary: #b80257;
+    --secondary: #783df0;
+}
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1.5em;
+}
+
+a {
+    color: inherit;
+}
+
+button {
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+input,
+button,
+textarea,
+select {
+    font-family: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    font-weight: 700;
+}
+.header-wrapper {
+    display: flex;
+    width: 100%;
+    min-height: 496px;
+    background: url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-wrapper .inner {
+    display: flex;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.container {
+    width: 1170px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+}
+.header-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    color: var(--white);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav a {
+    display: inline-block;
+    padding: 20px;
+    color: var(--white);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.action-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.action-btn {
+    font-size: 2rem;
+    color: var(--white);
+}
+
+h1.heading {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.breadcrumb {
+    display: flex;
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    color: #fffc;
+}
+
+.breadcrumb li + li::before {
+    content: "/";
+    padding: 0 6px;
+}
+
+/* Start main  */
+
+.main {
+    margin-top: 110px;
+    margin-bottom: 100px;
+}
+
+.main .inner {
+    display: flex;
+    gap: 30px;
+}
+
+.sidebar {
+    width: 270px;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    height: 43px;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.search-input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+}
+.search-input:not(:placeholder-shown) + .search-btn {
+    color: #333;
+}
+
+.menu-title {
+    margin-top: 30px;
+    font-size: 1.6em;
+    color: #222;
+}
+
+.menu {
+    margin-top: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+}
+
+.menu li + li {
+    border-top: 1px solid rgba(0, 0, 0, 0.09);
+}
+
+.menu a {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 0 25px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.menu a:hover {
+    color: var(--secondary);
+}
+
+.search-btn {
+    padding: 0 20px;
+    align-self: stretch;
+}
+
+/* Topics  */
+
+.topics {
+    display: flex;
+    justify-items: center;
+    gap: 18px;
+}
+
+.topics a {
+    display: inline-block;
+    padding: 0 14px;
+    text-decoration: none;
+    text-transform: capitalize;
+    border-radius: 15px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.topics .active a,
+.topics a:hover {
+    background-color: var(--secondary);
+    color: var(--white);
+}
+
+.course-list {
+    --column: 3;
+    --spacing: 30px;
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: var(--spacing);
+    margin-left: calc(-1 * var(--spacing));
+}
+
+.course-item {
+    display: flex;
+    flex-direction: column;
+
+    width: calc((100% / var(--column)) - var(--spacing));
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    margin-left: var(--spacing);
+}
+
+.course-item .thumb-wrapper {
+    display: block;
+    aspect-ratio: 1 / 0.8;
+}
+
+.course-item .thumb {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.course-item .info {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 15px 20px;
+}
+
+.course-item .title a {
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+
+.course-item .desc {
+    margin: 20px 0;
+}
+
+.course-item .bottom {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: auto;
+}
+
+.course-item .bottom div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.course-item .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.course-item .course-btn {
+    min-width: 66px;
+    height: 32px;
+    color: var(--white);
+    background-color: var(--secondary);
+    padding: 0 8px;
+    margin-left: auto;
+    border-radius: 30px;
+    text-decoration: none;
+    line-height: 32px;
+    text-align: center;
+}
+
+.course-pagination ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.course-pagination {
+    padding-top: 45px;
+}
+
+.course-pagination a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    font-weight: 600;
+    padding: 4px 10px;
+    text-decoration: none;
+    color: #0000004d;
+}
+
+.course-pagination .active a {
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
+}
+
+.course-pagination .next a {
+    background-color: var(--secondary);
+    color: var(--white);
+    border: 1px solid var(--secondary);
+}
+/* FOOTER  */
+
+footer a{
+    text-decoration: none;
+}
+
+.container-footer {
+    background-color: #151515;
+    padding: 80px 0 160px 0;
+}
+
+footer .box-footer {
+    color: #fff9;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-logo-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 270px;
+}
+
+.footer .footer-logo-detail .footer-logo {
+    height: 33px;
+}
+footer .footer-desc,
+.footer-copyright {
+    font-size: 1.4rem;
+}
+
+.footer-desc {
+    line-height: 22px;
+}
+footer .down-app {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 22px;
+}
+
+footer .down-app img {
+    height: 38px;
+}
+
+.footer-subscribe {
+    max-width: 300px;
+}
+footer  h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--white);
+    margin: 8px 0 25px 0;
+}
+
+footer  .footer-menu {
+    display: block;
+    font-size: 1.5rem;
+    line-height: 30px;
+}
+
+footer  .footer-menu a:hover {
+    color: var(--primary);
+}
+
+
+.footer-subscribe input {
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding: 0 20px;
+    background: #272727;
+    color: inherit;
+    margin: 20px 0;
+}
+
+.footer-subscribe button {
+    width: 95px;
+    line-height: 40px;
+    border-radius: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    background-color: var(--primary);
+}
+
+.footer-subscribe button:hover {
+    background-color: var(--white);
+    color: var(--primary);
+}

@@ -15,7 +15,7 @@ body {
     display: flex;
     align-items: center;
     gap: 14px;
-    justify-content: left;
+    justify-content: flex-start;
 
     margin: 0;
 }
@@ -285,4 +285,18 @@ body {
     
     color: #98989e;
     cursor: pointer;
+}
+@media (max-width: 768px) {
+  .register {
+    flex-direction: column;
+  }
+
+  .register .introduce {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .register .container-right {
+    width: 100%;
+  }
 }
