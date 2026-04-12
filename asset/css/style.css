@@ -527,3 +527,56 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+
+/* Model  */
+
+.model {
+    position: fixed;
+    inset: 0; 
+    display: flex;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.model .body {
+    margin: auto;
+    width: 440px;
+    position: relative;
+}
+
+.model .content {
+    color: #e8ebed;
+}
+.model .close-btn {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    width: 24px;
+    height: 24px;
+    font-size: 9px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.model .content .header {
+    background-color: #1966da;
+    padding: 14px 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.model .content .header p {
+    padding: 0;
+    margin: 0;
+}
+
+.model .content .desc{
+    color: white;
+    background-color: #020024;
+    padding: 15px;
+}
+
+.model .content .desc p {
+    padding: 0;
+    margin: 0;
+}

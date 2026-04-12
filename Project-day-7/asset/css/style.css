@@ -124,6 +124,10 @@ h1.heading {
     color: #fffc;
 }
 
+.breadcrumb a {
+    text-decoration: none;
+}
+
 .breadcrumb li + li::before {
     content: "/";
     padding: 0 6px;
@@ -184,16 +188,22 @@ h1.heading {
 }
 
 .menu a {
+    position: relative;
     display: flex;
     align-items: center;
     height: 40px;
+    left: 0;
     padding: 0 25px;
     text-decoration: none;
     color: rgba(0, 0, 0, 0.7);
+    transition:
+        color ease 0.3s,
+        left ease 0.4s;
 }
 
 .menu a:hover {
     color: var(--secondary);
+    left: 10px;
 }
 
 .search-btn {
@@ -202,6 +212,12 @@ h1.heading {
 }
 
 /* Topics  */
+
+.box-topics {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .topics {
     display: flex;
@@ -217,6 +233,7 @@ h1.heading {
     border-radius: 15px;
     height: 30px;
     line-height: 30px;
+    transition: all 0.3s ease-in-out;
 }
 
 .topics .active a,
@@ -247,6 +264,39 @@ h1.heading {
 .course-item .thumb-wrapper {
     display: block;
     aspect-ratio: 1 / 0.8;
+    overflow: hidden;
+}
+
+.course-item .thumb-wrapper .thumb {
+    transition: scale 0.6s ease-in-out;
+}
+
+.course-item .thumb-wrapper .thumb:hover {
+    scale: 1.2;
+}
+
+.thumb-wrapper {
+    position: relative;
+}
+
+.thumb-wrapper.icon-sale::after {
+    content: "\e0b7";
+    font-family: "Font Awesome 7 Free";
+    font-weight: 600;
+    position: absolute;
+    top: -66px;
+    right: -78px;
+    font-size: 2.4rem;
+    color: var(--white);
+    background-color: var(--primary);
+    width: 140px;
+    height: 100px;
+    transform: rotate(35deg);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 10px;
 }
 
 .course-item .thumb {
@@ -266,6 +316,11 @@ h1.heading {
 .course-item .title a {
     font-size: 1.8rem;
     text-decoration: none;
+    transition: 0.5s;
+}
+
+.course-item:hover .title a {
+    color: var(--primary);
 }
 
 .course-item .desc {
@@ -292,6 +347,38 @@ h1.heading {
     object-fit: cover;
 }
 
+.nav li {
+    position: relative;
+}
+
+.nav li:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    min-width: 220px;
+    background-color: var(--white);
+    color: black;
+}
+
+.submenu a {
+    display: flex;
+    align-items: center;
+    height: 44px;
+    color: black;
+    padding: 0 25px;
+    text-decoration: none;
+}
+
+.submenu a:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
 .course-item .course-btn {
     min-width: 66px;
     height: 32px;
@@ -303,6 +390,17 @@ h1.heading {
     text-decoration: none;
     line-height: 32px;
     text-align: center;
+    transition: transform 0.5s;
+}
+
+.course-item .course-btn.price {
+    background-color: var(--primary);
+    font-weight: 700;
+}
+
+.course-item .course-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 .course-pagination ul {
@@ -326,6 +424,11 @@ h1.heading {
     padding: 4px 10px;
     text-decoration: none;
     color: #0000004d;
+    transition: all 0.3s ease-in-out;
+}
+.course-pagination a:hover {
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
 }
 
 .course-pagination .active a {
@@ -340,8 +443,12 @@ h1.heading {
 }
 /* FOOTER  */
 
-footer a{
+footer a {
     text-decoration: none;
+}
+
+footer a:hover {
+    transition: all 0.3s ease-in-out;
 }
 
 .container-footer {
@@ -387,23 +494,22 @@ footer .down-app img {
 .footer-subscribe {
     max-width: 300px;
 }
-footer  h3 {
+footer h3 {
     font-size: 2rem;
     font-weight: 700;
     color: var(--white);
     margin: 8px 0 25px 0;
 }
 
-footer  .footer-menu {
+footer .footer-menu {
     display: block;
     font-size: 1.5rem;
     line-height: 30px;
 }
 
-footer  .footer-menu a:hover {
+footer .footer-menu a:hover {
     color: var(--primary);
 }
-
 
 .footer-subscribe input {
     width: 100%;
@@ -425,6 +531,7 @@ footer  .footer-menu a:hover {
     text-transform: uppercase;
     letter-spacing: 1.5px;
     background-color: var(--primary);
+    transition: 0.5s;
 }
 
 .footer-subscribe button:hover {
