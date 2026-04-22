@@ -1,0 +1,125 @@
+table {
+    border-collapse: collapse;
+    margin: 30px auto 0;
+}
+
+.table th,
+.table td {
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+}
+.strong {
+    font-weight: bold;
+}
+.border-bottom-none {
+    border-bottom: none;
+}
+.border-top-none {
+    border-top: none;
+}
+
+.table-2 {
+    max-width: 1200px;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+/* ADMIN TABLE  */
+
+
+
+.admin-table, .admin-table th, .admin-table td {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+}
+
+.admin-table tr {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.admin-table tr:hover {
+    opacity: 0.6;
+}
+.admin-table {
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        "Open Sans",
+        "Helvetica Neue",
+        sans-serif;
+        min-width: 900px;
+}
+.admin-table tr:nth-child(even) {
+  background-color: #f3f3f3;
+}
+.avatar {
+    display: inline-block;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.avatar-wrapper {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.admin-table th {
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #dadada;
+    
+    padding: 10px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.admin-table td {
+    font-size: 16px;
+    height: 30px;
+    padding: 10px;
+    line-height: 30px;
+}
+
+.avatar-wrapper i {
+    position: absolute;
+    top: 20px;
+    right: -2px;
+    color: #0059ff;
+    font-size: 12px;
+}
+.admin-table .active {
+    padding: 5px 10px;
+    color: #00ff04;
+    background-color: #b1cdba;
+    border-radius: 5px;
+}
+
+.admin-table .not-found {
+    padding: 5px 10px;
+    color: #e6e600;
+    background-color: #afb38d;
+    border-radius: 5px;
+}
