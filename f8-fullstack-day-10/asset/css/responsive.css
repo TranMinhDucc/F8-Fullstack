@@ -1,0 +1,158 @@
+.hamburger i {
+    display: none;
+}
+.label-sub-menu i {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 970px;
+    }
+    .nav a {
+        font-size: 1.5rem;
+        font-weight: normal;
+    }
+    .course-list {
+        --spacing: 20px;
+    }
+    .course-list {
+        --column: 2;
+        row-gap: 10px;
+    }
+}
+
+@media (max-width: 992px) {
+    .main .inner {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .sidebar {
+        width: 100%;
+    }
+    .course-list {
+        --column: 2;
+    }
+    .container {
+        max-width: 750px;
+    }
+
+    .action-wrapper label i {
+        font-size: 1.5rem;
+    }
+    .action-wrapper .action-btn i {
+        font-size: 1.5rem;
+    }
+    .submenu {
+        display: none;
+        opacity: 1;
+        visibility: visible;
+        position: inherit;
+        left: 0;
+        top: 0;
+    }
+    /* .nav li:hover .submenu {
+        opacity: 0;
+        visibility: hidden;
+    } */
+    .submenu li a {
+        font-size: 1.6rem;
+        color: rgba(0, 0, 0, 0.6);
+        line-height: 45px;
+        text-transform: capitalize;
+        padding: 0 0 0 25px;
+        font-weight: 500;
+    }
+
+    .label-sub-menu:has(input[type="checkbox"]:checked) .submenu {
+        display: block;
+    }
+    .nav-mobile label i {
+        display: inline-block;
+        color: white;
+        font-size: 2.3rem;
+    }
+    .header {
+        position: relative;
+    }
+    .nav-mobile .hamburger {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 100px;
+    }
+    .nav {
+        display: flex;
+        position: absolute;
+        left: 0;
+        top: 130px;
+        z-index: 1;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        height: 368px;
+        overflow-y: auto;
+        overscroll-behavior: contain;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    .nav li {
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    .nav li i {
+        color: white;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        padding: 18.5px 20px;
+        width: 60px;
+        border-left: 1px solid rgba(255, 255, 255, 0.15);
+        font-size: 1.8rem;
+    }
+
+    #menu-nav:checked ~ .nav {
+        display: flex;
+    }
+    footer .box-footer {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 550px;
+    }
+    .course-list {
+        --column: 2;
+    }
+    footer .box-footer {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 340px;
+    }
+    .course-pagination ul li:nth-child(4) {
+        display: none;
+    }
+    .top-select-section ul {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        align-items: start;
+    }
+
+    .course-list {
+        --column: 1;
+    }
+    .search-input-form form {
+        right: 0;
+    }
+    footer .box-footer {
+        flex-direction: column;
+        gap: 60px;
+    }
+}

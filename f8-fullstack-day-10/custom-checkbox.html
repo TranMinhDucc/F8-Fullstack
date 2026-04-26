@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./asset/css/reset.css" />
+        <link rel="stylesheet" href="./asset/css/custom-checkbox.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <form action="">
+            <table>
+                <tr class="title">
+                    <td></td>
+                    <td>Checkbox</td>
+                    <td>Radio</td>
+                    <td>Switch</td>
+                </tr>
+                <tr>
+                    <td>ON</td>
+                    <td>
+                        <label class="checkbox"
+                            ><input
+                                type="checkbox"
+                                id="checkbox"
+                                checked
+                                hidden
+                        /></label>
+                    </td>
+                    <td>
+                        <label class="radio"
+                            ><input type="radio" name="check" checked hidden
+                        /></label>
+                    </td>
+                    <td>
+                        <label class="switch">
+                            <input type="checkbox" checked />
+                            <span class="slider round"></span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>OFF</td>
+                    <td>
+                        <label class="checkbox"
+                            ><input type="checkbox" id="checkbox" hidden
+                        /></label>
+                    </td>
+                    <td>
+                        <label class="radio"
+                            ><input type="radio" name="check" hidden
+                        /></label>
+                    </td>
+                    <td>
+                        <label class="switch">
+                            <input type="checkbox"  />
+                            <span class="slider round"></span>
+                        </label>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
