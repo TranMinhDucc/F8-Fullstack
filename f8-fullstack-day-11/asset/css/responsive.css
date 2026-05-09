@@ -1,0 +1,257 @@
+.header-top .bar {
+    display: none;
+}
+
+.header-top .bar i {
+    font-size: 30px;
+}
+
+@media (max-width: 1399.98px) {
+    .box-services .btn-service {
+        padding: 20px 40px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .box-services .btn-service {
+        padding: 16px 27px;
+        font-size: 2rem;
+    }
+    .header-effect {
+        left: 69%;
+    }
+}
+@media (max-width: 992px) {
+    .content-header {
+        gap: 150px;
+    }
+    .about-right {
+        display: none;
+    }
+    .box-services .btn-service {
+        padding: 16px 40px;
+        font-size: 2rem;
+    }
+    .btn-feature {
+        margin-bottom: 38px;
+    }
+    .features .feature-decor {
+        width: 90px;
+        top: 76px;
+    }
+    .feature-decor-1 {
+        width: 90px;
+        top: 150px;
+        left: -42px;
+    }
+    .list-blogs .title {
+        font-size: 2rem;
+    }
+    .header-top .logo {
+        display: none;
+    }
+    .header-top .menu {
+        display: none;
+    }
+    .header-top .bar {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .features-flex {
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+    .header-blog .btn-blog a {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        font-family: var(--font-content);
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 21px;
+    }
+    .content-header {
+        gap: 80px;
+    }
+    .header .call {
+        font-size: 1rem;
+    }
+    .header .call a {
+        font-size: 1.2rem;
+    }
+    .header-top .bar i {
+        font-size: 1.8rem;
+    }
+    .header-top {
+        margin-top: 32px;
+    }
+    .content-header .outstanding {
+        font-size: 3.5rem;
+        line-height: 41px;
+    }
+    .content-header .desc {
+        font-size: 1rem;
+        max-width: 276px;
+        line-height: 17px;
+    }
+    .button-header {
+        padding: 8px 20px;
+        font-size: 1rem;
+    }
+    .content-header {
+        padding: 50px 0;
+    }
+    .box-play {
+        max-width: 100px;
+    }
+    .header-image .bg-green {
+        max-height: 242px;
+    }
+    .img-header {
+        width: 168px;
+        height: 242px;
+    }
+    .header-effect {
+        max-width: 82px;
+        height: 64px;
+    }
+    .header-effect {
+        left: 79%;
+    }
+    .bg-yellow {
+        height: 90%;
+        width: 50%;
+    }
+    .box-play {
+        top: -50px;
+        left: -50px;
+    }
+    .content-about .title {
+        font-size: 3rem;
+        max-width: 330px;
+        line-height: 36px;
+    }
+    .content-about .desc {
+        max-width: 330px;
+    }
+    .about {
+        padding: 30px 0;
+    }
+    .content-about .data strong {
+        font-size: 1.7rem;
+    }
+    .data p {
+        font-size: 1.2rem;
+    }
+    .btn-about {
+        padding: 10px 24px;
+        margin-top: 30px;
+    }
+    .content-about .desc {
+        margin: 15px 0;
+    }
+    .services .container {
+        padding-top: 50px;
+    }
+    .box-services {
+        margin-top: 40px;
+    }
+    .services-title .title {
+        font-size: 3rem;
+        line-height: 37px;
+    }
+    .box-services .btn-service {
+        font-size: 1.9rem;
+    }
+    .features {
+        padding: 50px 0;
+    }
+    .features-container .content .title {
+        font-size: 3rem;
+        line-height: 37px;
+        margin: 5px 0 15px;
+
+    }
+    .features-bottom {
+        margin-top: 50px;
+    }
+    .btn-feature {
+        margin: 20px 0 30px;
+
+    }
+    .team .title-team .title{
+        font-size: 3rem;
+        line-height: 37px;
+    }
+    .awards .container{
+        padding: 50px 0;
+    }
+
+    .awards .title-all .title {
+        font-size: 3rem;
+        line-height: 37px;
+    }
+    .box-card {
+        margin-top: 40px;
+    }
+    .button-testimonial{
+        display: none;
+    }
+    .testimonial{
+        padding: 50px 0;
+    }
+    .testimonial-title .title{
+        font-size: 3rem;
+        line-height: 37px;
+    }
+    .box-reviews{
+        margin-top: 40px;
+    }
+    .list-reviews {
+        margin-top: 40px;
+    }
+    .blog{
+        padding: 50px 0;
+    }
+    .header-blog .title{
+        font-size: 3rem;
+        line-height: 37px;
+        margin: 5px 0 15px;
+    }
+    .list-blogs .box .name {
+        font-size: 1.6rem;
+        line-height: 27px;
+    }
+    .sub-blog .blog-avt {
+        width: 58px;
+        height: 58px;
+    }
+    .list-blogs .title{
+        font-size: 1.9rem;
+        margin: 16px 0 10px;
+    }
+    .cta {
+        padding: 50px 0;
+    }
+    .box-cta .tag {
+        font-size: 1rem;
+    }
+    .box-cta .title{
+        font-size: 2.4rem;
+        line-height: 30px;
+    }.cta .container {
+        padding: 50px 0;
+    }
+    .list-footer {
+        padding-top: 30px;
+    }
+    .footer-social{
+        gap: 20px;
+        margin-top: 20px;
+    }
+}
